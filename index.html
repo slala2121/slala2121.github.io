@@ -93,23 +93,21 @@
 
 
 
-        <tr onmouseout="show_before_image()" onmouseover="show_after_image()">
+        <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id="automated_detection_image"><img src="paper/automated_detection/icon_after.png" width="180"></div>
-                <img src='papers/automated_detection/icon_before.png' width="180">
+                <div class="two" id="motionblur_image"><img src="paper/automated_detection/motionblur_after.png" width="180"></div>
+                <img src='papers/automated_detection/motionblur_before.png' width="180">
               </div>
               <script type="text/javascript">
-                function show_after_image() {
-                  document.getElementById('automated_detection_image').style.opacity="1";
-                }
-                
-                function show_before_image() {
-                  document.getElementById('automated_detection_image').style.opacity="0";
+                function motionblur_start() {
+                  document.getElementById('motionblur_image').style.opacity = "1";
                 }
 
-                
-                show_before_image()
+                function motionblur_stop() {
+                  document.getElementById('motionblur_image').style.opacity = "0";
+                }
+                motionblur_stop()
               </script>
             </td>
 
