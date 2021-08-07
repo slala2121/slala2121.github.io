@@ -97,7 +97,7 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <!-- <div class="two" id="motionblur_image"><img src="paper/automated_detection/motionblur_after.png" width="180"></div> -->
-                <img src='papers/automated_detection/icon_after.png' width="180">
+                <img src='papers/automated_detection/icon_before.png' width="180">
               </div>
 
               <!-- <script type="text/javascript">
@@ -142,11 +142,21 @@
         </tr>
 
 
-        <tr>
+        <tr onmouseout="show_image_before()" onmouseover="show_image_after()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='papers/iqa_sup/icon_updated.png' width="180">
+                <div class="two" id="iqa_sup_icon"><img src="papers/iqa_sup/icon_after.png" width="180"></div>
+                <img src='papers/iqa_sup/icon_before.png' width="180">
               </div>
+              <script type="text/javascript">
+                function show_image_before() {
+                  document.getElementById('iqa_sup_icon').style.opacity="0";
+                }
+                function show_image_after() {
+                  document.getElementById('iqa_sup_icon').style.opacity="1";
+                }
+                show_image_before()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>A Deep Learning Approach for Image Quality Assessment of Fetal Brain MRI</papertitle>
