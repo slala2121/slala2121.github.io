@@ -67,7 +67,7 @@
         <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='papers/iqa_ssl/icon_updated.png' width="180">
+                <img src='papers/iqa_ssl/icon.png' width="180">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -93,12 +93,24 @@
 
 
 
-        <tr>
+        <tr onmouseout="show_before_image()" onmouseover="show_after_image()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='papers/automated_detection/icon_updated.png' width="180">
+                <div class="two" id="automated_detection_image"><img src="paper/automated_detection/icon_after.png"></div>
+                <img src='papers/automated_detection/icon_before.png'>
               </div>
+              <script type="text/javascript">
+                function show_before_image() {
+                  document.getElementById('automated_detection_image').style.opacity="0";
+                }
+
+                function show_after_image() {
+                  document.getElementById('automated_detection_image').style.opacity="1";
+                }
+                show_before_image()
+              </script>
             </td>
+
             <td style="padding:20px;width:75%;vertical-align:middle">
         
               <papertitle>Automated Detection and Reacquisition of Motion Degraded Images in Fetal HASTE Imaging at 3T</papertitle>
