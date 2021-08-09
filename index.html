@@ -228,11 +228,21 @@
 
 
 
-        <tr>
+        <tr onmouseout="show_image_before()" onmouseover="show_image_after()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <img src='papers/recon/icon_updated.png' width="180">
+                <div class="two" id="recon_icon"><img src="papers/recon/icon_after.png" width="180"></div>
+                <img src='papers/recon/icon_before.png' width="180">
               </div>
+              <script type="text/javascript">
+                function show_image_before() {
+                  document.getElementById('recon_icon').style.opacity="0";
+                }
+                function show_image_after() {
+                  document.getElementById('recon_icon').style.opacity="1";
+                }
+                show_image_before()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <papertitle>A Machine Learning Approach for Mitigating Artifacts in Fetal Imaging due to an Undersampled HASTE Sequence</papertitle>
