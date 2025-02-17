@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/princeton_logo.png">
+  <link rel="icon" type="image/png" href="images/stanford_logo.png" class="stanford-logo">
 </head>
 
 <body>
@@ -22,20 +22,29 @@
               </p>
 
               <p>
-                I am a PhD student at Princeton University, advised by <a href="http://www.princeton.edu/~jha/">Professor Niraj K. Jha </a> in the Department of Electrical and Computer Engineering (ECE). 
+                I am a <strong>postdoctoral scholar</strong> at <strong>Stanford University School of Medicine </strong> working in the <a href="https://med.stanford.edu/summerhanlab.html">Han Lab under Professor Summer Han </a>. 
+                My research focuses on using <strong>artificial intelligence (AI) to identify risk phenotypes from wearable data and develop risk prediction models.</strong>   
               </p>
 
               <p>
-                I received my Bachelor of Science (S.B.) and Master of Engineering (MEng.) degrees from Massachusetts Institute of Technology (MIT) in Electrical Engineering and Computer Science, with a concentration in Artificial Intelligence and minor in Economics.
+                Previously, I received my <strong>Ph.D. in Electrical and Computer Engineering from Princeton University</strong>, where I was advised by <a href="http://www.princeton.edu/~jha/">Professor Niraj K. Jha</a>. 
+                My dissertation is titled <strong>Designing Efficient Clinical Randomized Controlled Trials with Limited Data Using Artificial Intelligence</strong>.
+              
+              </p>
+              <p>
+              Before that, I received my <strong>Bachelor of Science (S.B.) and Master of Engineering (MEng.) degrees from Massachusetts Institute of Technology (MIT) in Electrical Engineering and Computer Science, with a concentration in Artificial Intelligence </strong> and minor in Economics.
+                During my time at MIT, I was a research assistant in the 
+                <a href="https://www.rle.mit.edu/mri/">Magnetic Resonance Imaging Group under Professor Elfar Adalsteinsson</a>, investigating <strong>deep learning applications for enhancing the quality of fetal brain MRI.</strong> 
+                I also conducted research in the <a href="https://groups.csail.mit.edu/genesis/index.html">Genesis Group under Professor Patrick Winston</a>, developing methods based on Artificial Intelligence to model human curiosity. 
               </p>
 
               <p>
-                I was a research assistant in the 
-                <a href="https://www.rle.mit.edu/mri/">Magnetic Resonance Imaging Group under Professor Elfar Adalsteinsson</a>, investigating deep learning applications for enhancing the quality of fetal brain MRI. During my undergrad, I conducted research in the <a href="https://groups.csail.mit.edu/genesis/index.html">Genesis Group under Professor Patrick Winston</a>, developing methods based on Artificial Intelligence to model human curiosity. 
+                I have also interned at several companies during my time at MIT and Princeton University; for example, during my Ph.D., I worked on <strong>AI for health at Apple</strong>. 
               </p>
 
+
               <p>
-                I am a member of IEEE and MIT's Tau Beta Pi and Eta Kappa Nu honor societies. I received the Anthony Ephremides Fellowship from Princeton University and an Honorable Mention from the NSF GRFP competition.
+                I am a member of <strong>IEEE and MIT's Tau Beta Pi and Eta Kappa Nu honor societies</strong>. I received the Anthony Ephremides Fellowship from Princeton University and an Honorable Mention from the NSF GRFP competition.
               </p>
 
 
@@ -43,14 +52,14 @@
                 
               </p>
               <p style="text-align:center">
-                <a href="mailto:slala@princeton.edu.com">Email</a> &nbsp/&nbsp
+                <a href="mailto:slala21@stanford.edu">Email</a> &nbsp/&nbsp
                 <a href="data/cv.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=Jasm-NUAAAAJ&hl=en&oi=ao">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/slala2121">GitHub</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/profile_clear.png"><img style="width:50%;max-width:50%" alt="profile photo" src="images/profile_clear.png" class="hoverZoomLink"></a>
+              <a href="images/profile_clear.png"><img style="width:50%;max-width:50%" alt="profile photo" src="images/lala.jpeg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -59,13 +68,63 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interests span various applications of machine learning for automating the analysis of medical images through data-efficient learning algorithms, including techniques for data augmentation and semi-supervised learning.
-        
+                My research interest is on developing solutions for healthcare using AI and statistics across diverse clinical applications and modalities (e.g., time series). Below is a sampling of projects I have worked on. Please see my <a href="https://scholar.google.com/citations?user=Jasm-NUAAAAJ&hl=en&oi=ao">google scholar</a> for a complete list of my publications.  
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="tadsie_icon"> <img src="papers/tadsie/architecture.gif" width="200"></div>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>TAD-SIE: sample size estimation for clinical randomized controlled trials using a Trend-Adaptive Design with a Synthetic-Intervention-Based Estimator</papertitle>
+              <br>
+              <strong>Sayeri Lala</strong>
+              and 
+              Niraj Jha
+              <br>
+              <em>Trials</em>, 2025
+              <br>
+              <a href="https://link.springer.com/article/10.1186/s13063-024-08661-1">Paper</a>
+              <p></p>
+              <p>
+                Phase-3 clinical trials provide the highest level of evidence on drug safety and effectiveness needed for market approval by implementing large randomized controlled trials (RCTs). However, 30–40% of these trials fail mainly because such studies have inadequate sample sizes, stemming from the inability to obtain accurate initial estimates of average treatment effect parameters.
+                To remove this obstacle from the drug development cycle, we present a new algorithm called Trend-Adaptive Design with a Synthetic-Intervention-Based Estimator (TAD-SIE) that powers a parallel-group trial, a standard RCT design, by leveraging a state-of-the-art hypothesis testing strategy and a novel trend-adaptive design (TAD). 
+                On a real-world Phase-3 clinical RCT (i.e., a two-arm parallel-group superiority trial with an equal number of subjects per arm), TAD-SIE obtains operating points ranging between 63% to 84% power and 3% to 6% significance level in contrast to baseline algorithms that get at best 49% power and 6% significance level.
+                TAD-SIE is a superior TAD that can be used to reach typical target operating points but only for trials with rapidly measurable primary outcomes due to its sequential nature. 
+              </p>
+            </td>
+        </tr>
+        
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id="secrets_icon"> <img src="papers/secrets/architecture.gif" width="200"></div>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Subject-Efficient Clinical Randomized Controlled Trials using Synthetic Intervention</papertitle>
+              <br>
+              <strong>Sayeri Lala</strong>
+              and 
+              Niraj Jha
+              <br>
+              <em>Contemporary Clinical Trials Communication</em>, 2024
+              <br>
+              <a href="https://www.sciencedirect.com/science/article/pii/S2451865424000127">Paper</a>
+              <p></p>
+              <p>
+                The parallel-group randomized controlled trial (RCT) is commonly used in Phase-3 clinical trials to establish treatment effectiveness but requires hundreds-to-thousands of subjects, making it difficult to implement, which leads to high Phase-3 trial failure rates. One approach to increasing power of a trial is to augment data collected from an RCT with external data from prospective studies or prior RCTs. However, this requires that external data be comparable to data from the study of interest, a condition that does not hold for new interventions or populations being studied. Another approach is to lower sample size requirements by using the cross-over design, which measures individual treatment effects (ITEs) to remove inter-subject variability; however, this design is only suitable for chronic conditions and interventions with effects that wash out rapidly.
+              </p>
+            </td>
+        </tr>
+
 
 
         <tr>

@@ -1,3 +1,9 @@
+img.stanford-logo {
+  width: 20px; /* Adjust the width as needed */
+  height: 10px; /* Adjust the height as needed */
+  object-fit: contain; /* Ensures the aspect ratio is maintained */
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
